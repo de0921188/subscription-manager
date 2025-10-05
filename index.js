@@ -89,7 +89,7 @@ function getTimezoneOffset(timezone = 'UTC') {
     const utc = now.getTime();
     return Math.round((target - utc) / (1000 * 60 * 60));
   } catch (error) {
-    console.error(`获取时区偏移量错误: ${error.message}`);
+    console.error(`取得時區偏移量錯誤: ${error.message}`);
     return 0;
   }
 }
@@ -817,12 +817,12 @@ const adminPage = `
       <div class="flex justify-between h-16">
         <div class="flex items-center">
           <i class="fas fa-calendar-check text-indigo-600 text-2xl mr-2"></i>
-          <span class="font-bold text-xl text-gray-800">订阅管理系统</span>
+          <span class="font-bold text-xl text-gray-800">訂閱管理系統</span>
           <span id="systemTimeDisplay" class="ml-4 text-base text-indigo-600 font-normal"></span>
         </div>
         <div class="flex items-center space-x-4">
           <a href="/admin" class="text-indigo-600 border-b-2 border-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
-            <i class="fas fa-list mr-1"></i>订阅列表
+            <i class="fas fa-list mr-1"></i>訂閱列表
           </a>
           <a href="/admin/config" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
             <i class="fas fa-cog mr-1"></i>系统配置
