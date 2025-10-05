@@ -7,7 +7,7 @@ function getCurrentTimeInTimezone(timezone = 'UTC') {
     // 这样可以避免时区信息丢失的问题
     return new Date();
   } catch (error) {
-    console.error(`时区转换错误: ${error.message}`);
+    console.error(`時區轉換錯誤: ${error.message}`);
     // 如果时区无效，返回UTC时间
     return new Date();
   }
@@ -23,7 +23,7 @@ function convertUTCToTimezone(utcTime, timezone = 'UTC') {
     // 这样可以避免时区信息丢失的问题
     return new Date(utcTime);
   } catch (error) {
-    console.error(`时区转换错误: ${error.message}`);
+    console.error(`時區轉換錯誤: ${error.message}`);
     return new Date(utcTime);
   }
 }
@@ -68,7 +68,7 @@ function formatTimeInTimezone(time, timezone = 'UTC', format = 'full') {
       });
     }
   } catch (error) {
-    console.error(`时间格式化错误: ${error.message}`);
+    console.error(`時間格式化錯誤: ${error.message}`);
     return new Date(time).toISOString();
   }
 }
@@ -103,23 +103,23 @@ function formatTimezoneDisplay(timezone = 'UTC') {
     // 时区中文名称映射
     const timezoneNames = {
       'UTC': '世界标准时间',
-      'Asia/Shanghai': '中国标准时间',
-      'Asia/Hong_Kong': '香港时间',
-      'Asia/Taipei': '台北时间',
-      'Asia/Singapore': '新加坡时间',
-      'Asia/Tokyo': '日本时间',
-      'Asia/Seoul': '韩国时间',
-      'America/New_York': '美国东部时间',
-      'America/Los_Angeles': '美国太平洋时间',
-      'America/Chicago': '美国中部时间',
-      'America/Denver': '美国山地时间',
-      'Europe/London': '英国时间',
-      'Europe/Paris': '巴黎时间',
-      'Europe/Berlin': '柏林时间',
-      'Europe/Moscow': '莫斯科时间',
-      'Australia/Sydney': '悉尼时间',
-      'Australia/Melbourne': '墨尔本时间',
-      'Pacific/Auckland': '奥克兰时间'
+      'Asia/Shanghai': '中國標準時間',
+      'Asia/Hong_Kong': '香港時間',
+      'Asia/Taipei': '台北時間',
+      'Asia/Singapore': '新加坡時間',
+      'Asia/Tokyo': '日本時間',
+      'Asia/Seoul': '韩国時間',
+      'America/New_York': '美国东部時間',
+      'America/Los_Angeles': '美国太平洋時間',
+      'America/Chicago': '美国中部時間',
+      'America/Denver': '美国山地時間',
+      'Europe/London': '英国時間',
+      'Europe/Paris': '巴黎時間',
+      'Europe/Berlin': '柏林時間',
+      'Europe/Moscow': '莫斯科時間',
+      'Australia/Sydney': '悉尼時間',
+      'Australia/Melbourne': '墨尔本時間',
+      'Pacific/Auckland': '奥克兰時間'
     };
     
     const timezoneName = timezoneNames[timezone] || timezone;
@@ -427,8 +427,8 @@ const loginPage = `
 <body class="login-container flex items-center justify-center">
   <div class="login-box p-8 rounded-xl w-full max-w-md">
     <div class="text-center mb-8">
-      <h1 class="text-2xl font-bold text-gray-800"><i class="fas fa-calendar-check mr-2"></i>订阅管理系统</h1>
-      <p class="text-gray-600 mt-2">登录管理您的订阅提醒</p>
+      <h1 class="text-2xl font-bold text-gray-800"><i class="fas fa-calendar-check mr-2"></i>訂閱管理系統</h1>
+      <p class="text-gray-600 mt-2">登入管理您的訂閱提醒</p>
     </div>
     
     <form id="loginForm" class="space-y-6">
