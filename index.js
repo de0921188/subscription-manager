@@ -427,7 +427,7 @@ const loginPage = `
 <body class="login-container flex items-center justify-center">
   <div class="login-box p-8 rounded-xl w-full max-w-md">
     <div class="text-center mb-8">
-      <h1 class="text-2xl font-bold text-gray-800"><i class="fas fa-calendar-check mr-2"></i>訂閲管理系統</h1>
+      <h1 class="text-2xl font-bold text-gray-800"><i class="fas fa-calendar-check mr-2"></i>魂 夢訂閲管理系統</h1>
       <p class="text-gray-600 mt-2">登入管理您的訂閲提醒</p>
     </div>
     
